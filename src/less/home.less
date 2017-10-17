@@ -1,0 +1,135 @@
+@main-content-width: 85%;
+.stars {
+  color: #f46e65;
+  display: inline-block;
+  padding-left: 1em;
+}
+
+#chartWrap {
+  margin: 20px auto;
+}
+
+.recharts-wrapper {
+  margin: 0 auto;
+}
+
+.home-page-wrap {
+  margin-top: -15px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-page-wrap, .filter-card::before {
+  background: url("../images/home-background.jpg") 0 / cover fixed;
+  animation: background-switch 20s;
+  -webkit-animation: background-switch 20s;
+  -o-animation: background-switch 20s;
+  animation-iteration-count:100;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@keyframes background-switch
+{
+  //0%   {background: url("../images/home-background.jpg") 0 / cover fixed;}
+  20%   {background: url("../images/home-background.jpg") 0 / cover fixed;}
+  30%   {background: url("../images/home-background2.jpeg") 0 / cover fixed;}
+  50%   {background: url("../images/home-background2.jpeg") 0 / cover fixed;}
+  70%   {background: url("../images/home-background2.jpeg") 0 / cover fixed;}
+  80%   {background: url("../images/home-background.jpg") 0 / cover fixed;}
+  100%   {background: url("../images/home-background.jpg") 0 / cover fixed;}
+}
+
+.archive-page-wrap {
+  margin-top: -15px;
+  width: 100%;
+  height: 100%;
+  background: url("../images/home-background-Black.jpeg") 0 / cover fixed;;
+  overflow: hidden;
+}
+
+.home-main-content {
+  width: @main-content-width;
+  margin: 0 auto;
+  padding: 11% 15px 15px 15px;
+  position: relative;
+  height: 100%;
+  &.main-content-animate {
+    animation: main-content-animate .5s
+  }
+  .home-menu-bars {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .filter-card {
+    margin: 0 auto;
+    position: sticky;
+    width: 160px;
+    height: 160px;
+    border-radius: 6px;
+    padding: 20px;
+    overflow: hidden;
+    background: hsla(0, 0%, 100%, .3) border-box;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+    i {
+      font-size: 80px;
+      color: black;
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      text-align: center;
+    }
+    .menu-item-icon {
+      width: 80px;
+      height: 80px;
+      display: block;
+      margin: 0 auto;
+    }
+    .menu-item-title {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  }
+  .filter-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+  }
+  .filter-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(8px);
+  }
+}
+
+.no-data {
+  margin-top: 10%;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.no-data-content {
+  margin-top: 15px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.home-back {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .home-main-content {
+    padding: 6% 15px 15px 15px;
+  }
+}

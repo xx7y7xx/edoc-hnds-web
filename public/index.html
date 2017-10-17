@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>河南地税电子会计档案</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <script>(function () {
+        if (!sessionStorage.length) {
+            localStorage.setItem('getSessionStorage', Date.now());
+        }
+        if (window.attachEvent) {
+            window.attachEvent('storage', function (event) {
+                if (event.key == 'getSessionStorage') {
+                    localStorage.setItem('sessionStorage', JSON.stringify(sessionStorage));
+                    localStorage.removeItem('sessionStorage');
+                }
+                else if (event.key == 'sessionStorage' && !sessionStorage.length) {
+                    var data = JSON.parse(event.newValue);
+                    for (var key in data) {
+                        if (1) {
+                            sessionStorage.setItem(key, data[key]);
+                        }
+                    }
+                }
+            });
+        } else if (window.addEventListener) {
+            window.addEventListener('storage', function (event) {
+                if (event.key == 'getSessionStorage') {
+                    localStorage.setItem('sessionStorage', JSON.stringify(sessionStorage));
+                    localStorage.removeItem('sessionStorage');
+                }
+                else if (event.key == 'sessionStorage' && !sessionStorage.length) {
+                    var data = JSON.parse(event.newValue);
+                    for (var key in data) {
+                        if (1) {
+                            sessionStorage.setItem(key, data[key]);
+                        }
+                    }
+                }
+            });
+        }
+    })();</script>
+</head>
+
+<body>
+<div id="root">
+    <!--Your App Here-->
+</div>
+</body>
+
+</html>

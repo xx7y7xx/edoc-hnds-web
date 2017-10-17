@@ -1,0 +1,100 @@
+@uploader-width: 305px;
+.org-manager-wrap{
+  .add-pic{
+    float: left;
+    width: 305px;
+    height: 305px;
+    .uploader{
+      //display: table-cell;
+      display: block;
+      vertical-align: middle;
+      font-size: 28px;
+      color: #999;
+      width: @uploader-width;
+      height:@uploader-width;
+      text-align: center;
+      background:#DDD;
+      cursor: pointer;
+      border-radius: 10px;
+      position: relative;
+      .orgImg{
+        width: @uploader-width;
+        height: @uploader-width;
+        border-radius: 10px;
+      }
+      .delBtnBj {
+        width: @uploader-width;
+        height: @uploader-width;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        .delIcon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -30px;
+          margin-left: -30px;
+          font-size: 60px;
+          color: #f0f0f0
+        }
+      }
+    }
+  }
+  .info-input-list{
+    width: 370px;
+    float: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    .ant-input-group{
+      margin-bottom: 19px;
+    }
+    .common-head-label{
+      width: 100px;
+    }
+    .ant-input{
+      width: 250px;
+    }
+  }
+  // &.info-input-wrap{
+  //   margin-bottom: 15px;
+  //   float: left;
+  //   width:280px;
+  //   height:30px;
+  //   line-height: 30px;
+  //   border: 1px solid #d9d9d9;
+  //   border-radius: 4px;
+  //   display:flex;
+  //   .info{
+  //     padding-left: 10px;
+  //     width:80px;
+  //     display:inline-block;
+  //   }
+  //   .input{
+  //     border-left: 1px solid #d9d9d9;
+  //     flex: 1;
+  //   }
+  //   input{
+  //     tap-highlight:none;
+  //     border:none;
+  //   }
+  // }
+  .update-wrap{
+    display: block;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    text-align: center;
+    min-height: 96px;
+    .buttons-wrap{
+      width: 650px;
+      height: 94px;
+    }
+  }
+
+  .update-message{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+}

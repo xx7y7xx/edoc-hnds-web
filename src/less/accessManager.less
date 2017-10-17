@@ -1,0 +1,97 @@
+@form-element-width: 322px;
+@form-element-half-width: 156px;
+.access-apply-form{
+  margin: auto;
+  width: 422px;
+  .vt{
+    vertical-align: top;
+  }
+  .ant-input-group{
+    margin-bottom: 8px;
+  }
+  .common-head-label{
+    width: 100px;
+  }
+  .form-element{
+    width: @form-element-width;
+  }
+  .form-element-half{
+    width: @form-element-half-width;
+  }
+  .form-element-readonly{
+    display: inline-block;
+    width: @form-element-width;
+    border: 1px solid #d9d9d9;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .upload-attachment{
+    //text-align: center;
+    padding-top: 8px;
+    padding-left: 8px;
+    line-height: 1;
+    min-height: 114px;
+    i{
+      font-size: 28px;
+      color: #999;
+    }
+    .upload-text{
+      margin-top: 8px;
+      font-size: 12px;
+      color: #666;
+    }
+  }
+  .category-tree{
+    height: 202px;
+    overflow: auto;
+  }
+  .ant-calendar-picker-input{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+.access-apply-tabs{
+  .ant-tabs-nav{
+    width: 100%;
+    .ant-tabs-tab,.ant-tabs-ink-bar{
+      width: 25% !important;
+      text-align: center;
+    }
+  }
+}
+.access-approval-tabs{
+  .ant-tabs-nav{
+    width: 100%;
+    .ant-tabs-tab,.ant-tabs-ink-bar{
+      width: 33.33% !important;
+      text-align: center;
+    }
+  }
+}
+.transfer-detail-list-modal{
+  .table-wrap{
+    min-height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  .detail-info{
+    padding-left: 17px;
+    .ant-row{
+      height: 40px;
+    }
+    .tit{
+      font-weight: bold;
+    }
+    .info{
+      overflow: hidden;
+      word-wrap: no-wrap;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+.attachment-readonly{
+  .anticon-delete{
+    display: none;
+  }
+}

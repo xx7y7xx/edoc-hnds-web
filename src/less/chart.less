@@ -1,0 +1,98 @@
+@normal-border: 1px solid #e9e9e9;
+
+.charts-table {
+  .ant-table {
+    border-radius: 0 0 4px 4px;
+  }
+  .charts-table-top {
+    height: 50px;
+    border: @normal-border;
+    border-radius: 6px 6px 0 0;
+    padding: 7px 10px;
+    position: relative;
+    .charts-tab-box {
+      display: inline-block;
+      position: absolute;
+      margin: 0 auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 180px;
+      height: 50px;
+      line-height: 52px;
+      font-size: 14px;
+      font-weight: bold;
+      span {
+        display: inline-block;
+        width: 120px;
+        height: 50px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+  .charts-bar{
+    color: #FFFFFF;
+    background-color: #515151;
+    border-radius: 0;
+    border: 1px solid #515151;
+    border-top: none;
+    padding: 0 83px;
+    .ant-calendar-picker{
+      width: 100px;
+      input, input:focus{
+        color: #FFFFFF;
+        background-color: #515151;
+        border: none;
+        box-shadow: none;
+        //border-radius: 0;
+        //border-bottom: 1px solid #eee;
+      }
+      i,span:after{
+        color: #FFFFFF;
+        background-color: #515151;
+      }
+    }
+    .charts-org-select,.charts-org-select:focus {
+      color: #FFFFFF;
+      border: none;
+      box-shadow: none;
+      width: 120px;
+      .ant-select-selection.ant-select-selection--single{
+        background-color: #515151;
+        border: none;
+        .ant-select-selection__rendered:focus{
+          border: none;
+          box-shadow: none;
+        }
+      }
+      .ant-select-open.ant-select-selection,.ant-select-selection:focus{
+        box-shadow: none;
+        border: none;
+      }
+    }
+  }
+  .charts-content-box{
+    .chart-pie {
+      width: 100%;
+      height: 700px;
+      margin: 0 auto;
+      border-radius: 0 0 6px 6px;
+    }
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1600px) {
+  .charts-content-box{
+    .chart-pie {
+      height: 550px !important;
+    }
+  }
+}
+@media (min-width: 1200px) and (max-width: 1366px) {
+  .charts-content-box{
+    .chart-pie {
+      height: 450px !important;
+    }
+  }
+}

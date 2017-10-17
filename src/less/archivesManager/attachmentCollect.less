@@ -1,0 +1,92 @@
+@common-theme-color: #12bce7; //#45c6e7;
+.collection-form {
+  .ant-form-item {
+    height: 35px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.65);
+    vertical-align: top;
+    margin-bottom: 10px;
+    input.ant-input, .ant-select-selection {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+  .collection-head-label {
+    width: 38%;
+  }
+  .form-item {
+    width: 62%;
+    .ant-calendar-picker {
+      width: 100%;
+    }
+  }
+  .upload-area {
+    float: left;
+    height: 256px;
+    padding: 15px;
+    background-color: #eee;
+    margin-left: 20px;
+    margin-top: 10px;
+    overflow-y: auto;
+    width: 720px;
+    border-radius: 5px;
+  }
+  .merged-item {
+    padding-left: 20px;
+    line-height: 35px;
+  }
+  .ant-input-group {
+    width: 75%;
+  }
+}
+
+.form-left {
+  width: 50%;
+  float: left;
+  border-right: 1px solid #eeeeee;
+  padding: 10px 20px;
+}
+
+.form-right {
+  width: 50%;
+  float: left;
+  padding: 10px 20px;
+}
+
+.ant-upload-text {
+  font-size: 23px;
+  margin-top: 8px;
+  user-select: none;
+  i[disabled] {
+    color: #EEEEEE;
+  }
+}
+
+.download-confirm {
+  width: 100px;
+  height: 60px;
+}
+
+.upload-popover-btns {
+  a {
+    font-size: 14px;
+    display: block;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  a:hover {
+    color: @common-theme-color;
+  }
+  a[disabled] {
+    color: rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.upload-file-icon, .camera-btn-icon, .add-btn-icon {
+  cursor: pointer;
+}
+
+.upload-file-icon:hover, .camera-btn-icon:hover, .add-btn-icon:hover {
+  color: @common-theme-color;
+}

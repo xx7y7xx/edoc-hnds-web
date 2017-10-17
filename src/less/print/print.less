@@ -1,0 +1,107 @@
+@table-width: 99%;
+@tr-height: 30px;
+@td-border: 1px solid #EEE;
+.table-top-title{
+  width: @table-width;
+  text-align: center;
+}
+.table-header-hr{
+  border-top: @td-border;
+  font-weight: bold;
+}
+.table-header-hr, .table-tr{
+  width: @table-width;
+  line-height: @tr-height;
+  border-bottom: @td-border;
+  & > div{
+    padding: 0 10px;
+    box-sizing: border-box;
+    //height: @tr-height;
+    border-left: @td-border;
+  }
+  .last{
+    border-right: @td-border;
+  }
+}
+
+.voucher-cover-outLine {
+  border: 1px solid black;
+  padding-left: 12%;
+  padding-right: 10%;
+  padding-bottom: 8%;
+  width: 90%;
+  .voucher-cover-title {
+    margin: 5% auto;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .voucher-table-row {
+    .voucher-table-col {
+      line-height: 30px;
+      border-bottom: 1px solid black;
+      border-left: 1px solid black;
+      text-align: center;
+    }
+    .has-border-top{
+      border-top: 1px solid black;
+    }
+    .has-border-right{
+      border-right: 1px solid black;
+    }
+    .intend-col {
+      text-align: center;
+    }
+  }
+  .voucher-table-header {
+    margin-bottom: 10px;
+  }
+  .voucher-table-footer {
+    margin-top: 15px;
+  }
+}
+.box-back {
+  margin-top: 20px;
+  width: 10%;
+  .box-back-item {
+    border: 1px solid black;
+    border-bottom: none;
+    text-align: center;
+    line-height: 25px;
+  }
+  .has-border-bottom {
+    border-bottom: 1px solid black;
+  }
+  .box-back-header {
+    line-height: 30px;
+  }
+  .box-back-footer {
+    line-height: 24px;
+  }
+}
+
+/*移交清单打印*/
+.transfer-list-table-header {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  font-weight: bold;
+}
+.transfer-list-table-row {
+  border-bottom: 1px solid black;
+}
+.center-col{
+  text-align: center;
+  line-height: 30px;
+  border-left: 1px solid black;
+}
+.transfer-list-table-footer {
+  margin-top: 20px;
+}
+.has-border-right {
+  border-right: 1px solid black;
+}
+.transfer-bold-item {
+  font-weight: bold;
+}
+.transfer-indent-item {
+  text-indent: 15px;
+}
