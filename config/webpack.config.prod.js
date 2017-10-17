@@ -304,6 +304,9 @@ module.exports = {
         comments: false,
       },
       sourceMap: true,
+      mangle: {
+        screw_ie8: false
+      },
     }),
     // Note: this won't work without ExtractTextPlugin.extract(..) in `loaders`.
     new ExtractTextPlugin({
